@@ -16,9 +16,16 @@
 #
 import webapp2
 
+
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        header = "<h1>Fortune Cookie</h1>"
         self.response.write('Hello world!')
+        <body>
+            <h1>
+                <a href="/">Signup</a>
+            </h1>
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
